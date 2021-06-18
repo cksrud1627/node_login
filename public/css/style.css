@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+* { font-family: 'Nanum Gothic', sans-serif; box-sizing: border-box; outline: none; }
+html { font-size: 12px; color: #212121; }
+body { padding: 0; margin: 0; }
+ul { list-style: none; padding: 0; margin: 0; }
+dl { display: table; width: 100%; padding: 0; margin: 0;}
+dt { display: table-cell; vertical-align: middle; }
+dd { display: table-cell; vertical-align: middle; }
+
+input[type='text'],
+input[type='number'],
+input[type='password'],
+input[type='email'],
+select { width: 100%; height: 40px; border: 1px solid #d5d5d5; border-radius: 5px; padding: 0 10px; }
+a { text-decoration: none; color: #212121; }
+
+#main_wrap { padding: 10px; }
+
+/** 여백 */
+.mt10 { margin-top: 10px !important; }
+.mt15 { margin-top: 15px !important; }
+.mt20 { margin-top: 20px !important; }
+
+/** 버튼 공통 */
+.submit_btn { background-color: blue; color: #ffffff; height: 45px; width: 250px; display: block; margin: 20px auto; border: 0; border-radius: 7px; cursor: pointer; }
+
+.btn1, .btn2 { background-color: purple; color: #ffffff; padding: 5px 15px; cursor: pointer; border-radius: 3px; border: 0; }
+.btn2 { background-color: orange; color: #212121; }
+
+/** 페이징 */
+.paginator { text-align: center; padding: 20px 0; }
+.paginator a { padding: 5px 10px; border: 1px solid #212121; font-size: 11px; border-radius: 3px; margin: 0 2px; }
+.paginator a.paginator-current { background-color: #212121; color: #ffffff; }
+
+/** 팝업 공통 */
+.popup_tit { font-size: 17px; font-weight: bold; padding-bottom: 15px; margin-bottom: 20px; border-bottom: 1px solid #212121; }
+
+/** outline/header/_main.html */
+header .logo_search .logo { float: left; }
+header .logo_search .search { float: right; width: 250px; }
+header .logo_search:after { clear: both; content: ''; display: block; }
+header .logo_search .search input[type='text'] { width: calc(100% - 60px); float: left; border: 3px solid #000000; border-radius: 0; }
+header .logo_search .search_btn { width: 60px; display: block; float: right; height: 40px; background-color: #000000; color: #ffffff; border: 0; cursor: pointer; }
+header .logo_search .search:after { clear: both; content: ''; display: block; }
