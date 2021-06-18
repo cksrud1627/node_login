@@ -1,5 +1,6 @@
 {% extends '../layout.html' %}
 {% block content %}
+<div class='login_box'>
 <form method='post' action='/member/login' autocomplete='off' target='ifrmHidden'>
 	<dl>
 		<dt>아이디</dt>
@@ -24,4 +25,5 @@
 	</div>
 	<input type='submit' value='로그인'>
 </form>
+</div>
 {% endblock %}

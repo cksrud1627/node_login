@@ -1,12 +1,25 @@
-<div class='logo_search'>
-	<div class='logo'>
-		<a href='/'></a>
-	</div>
-	<div class='search'>
+<ul class='top_menu'>
+	<li class='search'>
 		<form method='get' action='/board/search' autocomplete='off'>
 			<input type='hidden' name='sopt' value='all'>
 			<input type='text' name='skey' value='{{ skey }}' placeholder='검색어 입력'>
-			<input type='submit' value='검색' class='search_btn'>
 		</form>
-	</div>
+	</li>
 <!--// search -->
+{% if isLogin %}
+<li class='login_menu'>
+<a href='/member/update'>회원정보수정 |</a>
+ <a href='/member/logout'>로그아웃</a>
+ {% else %}
+   <a href='/member/join'>회원가입 |</a>
+ <a href='/member/login'>로그인</a>
+</li>
+{% endif %}
+</ul>
+
+<!-- // 로고 영역 -->
+<div class='logo_wrap'>
+		<a href='/main/index'>
+				<img src='/img/logo1.jpg' class='logo'><span>Movie</span><span>box</span>
+		</a>
+</div>

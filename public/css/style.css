@@ -36,9 +36,25 @@ a { text-decoration: none; color: #212121; }
 .popup_tit { font-size: 17px; font-weight: bold; padding-bottom: 15px; margin-bottom: 20px; border-bottom: 1px solid #212121; }
 
 /** outline/header/_main.html */
-header .logo_search .logo { float: left; }
-header .logo_search .search { float: right; width: 250px; }
-header .logo_search:after { clear: both; content: ''; display: block; }
-header .logo_search .search input[type='text'] { width: calc(100% - 60px); float: left; border: 3px solid #000000; border-radius: 0; }
-header .logo_search .search_btn { width: 60px; display: block; float: right; height: 40px; background-color: #000000; color: #ffffff; border: 0; cursor: pointer; }
-header .logo_search .search:after { clear: both; content: ''; display: block; }
+header .top_menu { text-align: right; width: 100%; }
+header .top_menu li {  display: inline-block; }
+header .top_menu .search input[type='text'] { border: 1px solid black;  width: 200px; height: 25px; border-radius: 25px; font-size: 12px; }
+header .top_menu li a { padding: 5px; }
+
+header .logo_wrap { text-align: center; }
+header .logo_wrap .logo { width: 200px; }
+header .logo_wrap a { font-size: 40px; font-weight: 600; }
+header .logo_wrap span:nth-child(2) { color: violet; }
+header .logo_wrap span:nth-child(3) {  color: yellow; }
+
+
+/** Outline/Footer/_footer.php */
+footer { border-top: 2px dashed #333333; padding: 20px 0; margin-top: 30px; }
+footer .box1 { border: 1px solid #333333; width: 400px; border-radius: 10px; padding: 20px; }
+footer .box2 { text-align: right; }
+footer .box1 .title { font-size: 20px; font-weight: 600; margin-bottom: 15px; }
+footer .box1 .site > div { font-size: 15px; font-weight: 500; cursor: pointer; }
+footer .box1 .site > div:hover { background-color: blueviolet; color: #ffffff; }
+
+footer .box2 .title { font-size: 16px; font-weight: 600; margin-bottom: 5px; }
+footer .box2 .rows { font-weight: 500; margin-top: 10px; }

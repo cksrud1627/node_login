@@ -39,7 +39,7 @@
 .board_default .post_list > li:after { display: block; content: ''; clear: both; }
 
 .board_default.list { position: relative; }
-.board_default .write_btn { position: absolute; right: 0; top: -35px; }
+.board_default .write_btn { position: absolute; right: 0; bottom : -60px; margin-right: 10px;}
 
 .board_default .post_search  {  background-color: #f8f8f8; border-bottom: 1px solid #d5d5d5; padding:10px; text-align: right; }
 .board_default .post_search select { width: 120px; height: 30px; }

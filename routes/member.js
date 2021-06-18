@@ -30,7 +30,7 @@ router.route("/join")
 				if (req.session.naverProfile) { // 네이버 회원가입 -> 바로 로그인 처리
 					const re = await naverLogin.login(req, res);
 					if (re) { // 소셜 로그인 성공
-						 return go("/", res, "parent");
+						 return go("/board/list/qna", res, "parent");
 					}
 				} else { // 일반회원가입
 					return go("/member/login", res, "parent");
@@ -54,7 +54,7 @@ router.route('/login')
 
 			const result = await member.login(req.body.memId, req.body.memPw, req);
 			if (result) { // 로그인 성공 -> 메인 페이지
-				return go("/", res, "parent");
+				return go("/board/list/qna", res, "parent");
 			}
 
 			return alert("로그인에 실패하셨습니다.", res);
